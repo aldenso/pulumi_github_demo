@@ -23,7 +23,7 @@ Normalmente el proyecto se crea como sigue:
 pulumi new -d "Mi proyecto Github" --dir pulumi_github_demo -n pulumi_github_demo -s production -y typescript
 ```
 
-Nota: No hace falta, ya que el repositorio tiene el contenido final
+Nota: No realizar, ya el repositorio tiene el contenido final
 
 Se instalan las librerias faltantes.
 
@@ -34,7 +34,13 @@ npm install @pulumi/github mocha @types/mocha ts-node chai @types/chai
 
 Se crean los archivos para el programa con la configuracion deseada.
 
-Nota: ya el repositorio tiene creada las estructura
+Nota: No realizar, ya el repositorio tiene el contenido final
+
+Crear el stack inicial.
+
+```sh
+pulumi stack init production
+```
 
 Se ingresan las configuraciones necesarias para el programa.
 
