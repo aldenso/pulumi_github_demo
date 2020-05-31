@@ -20,7 +20,7 @@ v2.2.1
 Normalmente el proyecto se crea como sigue:
 
 ```sh
-pulumi new -d "Mi proyecto Github" --dir pulumi_github_demo -n pulumi_github_demo -s production -y typescript
+pulumi new -d "Mi proyecto Github" --dir pulumi_github_demo -n pulumi_github_demo -s develop -y typescript
 ```
 
 Nota: No realizar, ya el repositorio tiene el contenido final
@@ -39,7 +39,7 @@ Nota: No realizar, ya el repositorio tiene el contenido final
 Crear el stack inicial.
 
 ```sh
-pulumi stack init production
+pulumi stack init develop
 ```
 
 Se ingresan las configuraciones necesarias para el programa.
@@ -47,7 +47,7 @@ Se ingresan las configuraciones necesarias para el programa.
 ```sh
 pulumi config set --secret github:token TUTOKENDEGITHUB
 pulumi config set github:organization TUORGDEGITHUB
-pulumi config set github_example:suffix production
+pulumi config set github_example:suffix develop
 ```
 
 Se realiza un preview del despliegue.
