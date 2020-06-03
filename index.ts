@@ -1,8 +1,8 @@
 // import * as pulumi from "@pulumi/pulumi";
 import * as github from "@pulumi/github";
 import * as config from "./config/config"
-import * as https from "https";
-import * as fs from "fs";
+// import * as https from "https";
+// import * as fs from "fs";
 
 import { runTests } from "./tests";
 
