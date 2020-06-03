@@ -27,10 +27,10 @@ export const initialFiles = new github.RepositoryFile("initial file",
 
 // exports.INITIALFILES = initialFiles;
 
-const downloadfile = fs.createWriteStream("files/gitignore")
-const request = https.get("https://www.gitignore.io/api/node,python,visualstudiocode", function(response){
-    response.pipe(downloadfile)
-});
+// const downloadfile = fs.createWriteStream("files/gitignore")
+// const request = https.get("https://www.gitignore.io/api/node,python,visualstudiocode", function(response){
+//     response.pipe(downloadfile)
+// });
 
 
 export const gitignorefile = new github.RepositoryFile("gitignore file",
